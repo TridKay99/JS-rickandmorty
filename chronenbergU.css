@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'rickandmorty';
+  src: url('rick_and_morty.ttf')
+}
+
+html { 
+  background: url(R&Mbackground.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.title {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color: #00ff00;
+  font-family: 'rickandmorty';
+  font-size: 40px;
+  padding-bottom: 20px;
+} 
+
+
+.scriptdiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap
+}
