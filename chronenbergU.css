@@ -20,12 +20,11 @@ html {
   font-size: 40px;
   padding-bottom: 20px;
 } 
-/* 
-.scriptdiv {
+body {
   display: flex;
-  flex-direction: row;
+
   flex-wrap: wrap
-} */
+}
 
 .bodyContainer {
   display: flex;
@@ -33,7 +32,7 @@ html {
   flex-wrap: wrap
 }
 
-body.scriptdiv {
+.scriptdiv {
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
