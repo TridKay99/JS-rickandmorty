@@ -1,11 +1,113 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <link rel="stylesheet" href="chronensurvey.css">
-      <a href="index.html">Home</a>
-  </head>
-
-  <body>
+    <link rel="stylesheet" href="chronensurvey.css">
     <script src="survey.js"></script>
+  </head>
+  <body>
+    <h2 class="quizHeader">Find out which Rick and Morty Character you are!</h2>
+    <div class="quizdiv">
+    <tr>
+      <td>
+        <p class="question">1. "What does wubba lubba dub dub mean?\</p>
+        <ul>
+        <input class="answer" type="radio" name="q1" value="1">
+          <label id="correctString1">I'm in great pain</label>
+        <br>
+          <input class="answer" type="radio" name="q1" value="0">
+          <label>Please leave</label>
+          <br>
+          <input class="answer" type="radio" name="q1" value="0">
+          <label>I'm a genius</label>
+          <br>
+          <input class="answer" type="radio" name="q1" value="0">
+          <label>You pass butter</label>
+        </ul>
+      </td>
+      <td>
+        <p class="question">2.Who killed Birdperson in a horrific turnabout during his wedding? </p>
+        <ul>
+          <input class="answer" type="radio" name="q2" value="0">
+          <label>Unmuscular Michael</label>
+          <br>
+          <input class="answer" type="radio" name="q2" value="1">
+          <label id="correctString2">Tammy</label>
+          <br>
+          <input class="answer" type="radio" name="q2" value="0">
+          <label>Gear Head</label>
+          <br>
+          <input class="answer" type="radio" name="q2" value="0">
+          <label>Pichael Thompson</label>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+          <p class="question">3. Who does Beth shoot?</p>
+          <ul>
+            <input class="answer" type="radio" name="q3" value="0">
+            <label>Abradolph Linkler</label>
+            <br>
+            <input class="answer" type="radio" name="q3" value="1">
+            <label id="correctString3">Mr.Poopybutthole</label>
+            <br>
+            <input class="answer" type="radio" name="q3" value="0">
+            <label>Sleepy Gary</label>
+            <br>
+            <input class="answer" type="radio" name="q3" value="0">
+            <label>Tophat Jones</label>
+          </ul>
+      </td>
+      <td>
+          <p class="question">4. Rick built a theme park inside of a homeless man. What is it called?</p>
+          <ul>
+            <input class="answer" type="radio" name="q4" value="0">
+            <label>Organopolis</label>
+            <br>
+            <input class="answer" type="radio" name="q4" value="1">
+            <label id="correctString4">Anatomy Park</label>
+            <br>
+            <input class="answer" type="radio" name="q4" value="0">
+            <label>Body Land</label>
+            <br>
+            <input class="answer" type="radio" name="q4" value="0">
+            <label>Homeless Homes</label>
+          </ul>
+            <p class="question">5. Quiz question #1</p>
+            <ul>
+            <input class="answer" type="radio" name="q5" value="1">
+              <label id="correctString1">correct answer 1</label>
+            <br>
+              <input class="answer" type="radio" name="q1" value="0">
+              <label>wrong answer</label>
+              <br>
+              <input class="answer" type="radio" name="q1" value="0">
+              <label>wrong answer</label>
+              <br>
+              <input class="answer" type="radio" name="q1" value="0">
+              <label>wrong answer</label>
+            </ul>
+          </div>
+      </td>
+    </tr>
+    </table>
+  <br/>
+    <div class="submitter">
+            <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+            type="submit" value="Submit" />
+      </div>
+    
+  <!--show only wrong answers on submit-->
+      <div class="quizAnswers" id="correctAnswer1"></div>
+        <div class="quizAnswers" id="correctAnswer2"></div>
+      <div class="quizAnswers" id="correctAnswer3"></div>
+      <div class="quizAnswers" id="correctAnswer4"></div>
+
+  <!--show score upon submit-->
+      <div>
+        <h2 class="quizScore" id="userScore"></h2>
+      </div>
+    </div>
+
   </body>
 </html>
