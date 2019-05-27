@@ -1,4 +1,22 @@
-// const fetch = require('node-fetch');
+// const chars2 = []
+
+// const group1 = fetch("https://rickandmortyapi.com/api/character/")
+// const group2 = fetch("https://rickandmortyapi.com/api/character/?page=19")
+// const group3 = fetch("https://rickandmortyapi.com/api/character/?page=18")
+
+// Promise.all([group1,group2,group3])
+//   .then((characters) => {
+//     characters.forEach((response) => {
+//       getData(response.json())
+//     })
+//   })
+
+//   const getData = (response) => {
+//     response.then((data) => {
+//       chars2.push(data.results[0])
+//     })
+//   }
+// return(chars2);
 
 chars = [
   {
