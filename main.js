@@ -1,8 +1,4 @@
 // const fetch = require('node-fetch');
-// const Characterarray = require('./Characterarray');
-
-vTransferChars = localStorage.getItem("vCharsLocalStorage");
-const vChars = vTransferChars; 
 
 chars = [
   {
@@ -721,10 +717,8 @@ chars = [
     created: '2018-01-10T19:44:22.262Z'
   }
 ];
-
+const charsDiv = document.querySelector(".container")
 
 chars.forEach(character => {
-  let newDiv = document.createElement("div")
-  newDiv.innerHTML = `${character.name}, ${character.species}(${character.type})`;
-  document.body.appendChild(newDiv);
+  charsDiv.innerHTML += `${character.name}, ${character.species}(${character.type})`;
 })
