@@ -38,10 +38,11 @@ header {
 .container {
   display:flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 30px;
   padding-top: 120px;
+  /* margin-left: 300px; */
 }
 
 #text {
@@ -49,4 +50,8 @@ header {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+img {
+  margin-left: 300px;
 }

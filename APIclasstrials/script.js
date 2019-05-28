@@ -1,37 +1,37 @@
-// const fetch = require('node-fetch');
+const fetch = require('node-fetch');
 const chars = []
 
-// const RMapi = () => {
-//   const RickandMorty = fetch("https://rickandmortyapi.com/api/character/?page=2")
-//   RickandMorty
-//     .then((response) => {
-//   return response.json();
-//   })
-//     .then((data) => {
-//       // const char = data.results[0]
-//   console.log(data);
-//   })
-// }
-
-// RMapi()
-
-const group1 = fetch("https://rickandmortyapi.com/api/character/")
-const group2 = fetch("https://rickandmortyapi.com/api/character/?page=19")
-const group3 = fetch("https://rickandmortyapi.com/api/character/?page=18")
-
-Promise.all([group1,group2,group3])
-  .then((characters) => {
-    characters.forEach((response) => {
-      getData(response.json())
-    })
+const RMapi = () => {
+  const RickandMorty = fetch("https://rickandmortyapi.com/api/character/?page=2")
+  RickandMorty
+    .then((response) => {
+  return response.json();
   })
+    .then((data) => {
+      // const char = data.results[0]
+  console.log(data);
+  })
+}
 
-  const getData = (response) => {
-    response.then((data) => {
-      chars.push(data.results[0])
-    })
-  }
-console.log(chars);
+RMapi()
+
+// const group1 = fetch("https://rickandmortyapi.com/api/character/")
+// const group2 = fetch("https://rickandmortyapi.com/api/character/?page=19")
+// const group3 = fetch("https://rickandmortyapi.com/api/character/?page=18")
+
+// Promise.all([group1,group2,group3])
+//   .then((characters) => {
+//     characters.forEach((response) => {
+//       getData(response.json())
+//     })
+//   })
+
+//   const getData = (response) => {
+//     response.then((data) => {
+//       chars.push(data.results[0])
+//     })
+//   }
+// console.log(chars);
 
 // const charsDiv = document.querySelector(".container")
 
