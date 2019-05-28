@@ -49,6 +49,11 @@ header {
   flex-wrap: wrap;
 }
 
+.card {
+  width: 200px;
+  height: 200px;
+}
+
 /* img {
   margin-left: 300px;
 } */

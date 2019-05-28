@@ -17,17 +17,17 @@ fetch(`https://rickandmortyapi.com/api/character/${nums}`)
         let container = document.querySelector("#container");
 
         data.forEach(function(result) {
-        let newName = document.createElement("name");
-        newName.innerHTML = result.name;
+        let p = document.createElement("p");
+        p.innerText = result.name;
         console.log(result.name);
 
         let newDiv = document.createElement("Div")
-        let newImg = document.createElement("img");
-        newImg.src = result.image;
-        console.log(result.image)
+        newDiv.style.background = `url(${result.image})`
+        newDiv.style.backgroundSize = "cover"
+        newDiv.style.backgroundPosition = "center";
+        newDiv.classList.add("card")
         container.appendChild(newDiv);
-        newDiv.appendChild(newImg);
-        newDiv.appendChild(newName);
+        newDiv.appendChild(p);
     });
   })}
 
