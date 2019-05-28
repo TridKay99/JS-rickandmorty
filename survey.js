@@ -192,7 +192,7 @@ function ten49() {
 
 
 
-first49()
+// first49()
 // second49()
 // third49()
 // four49()
@@ -215,7 +215,7 @@ const seventh = ['One Million Ants']
 const answerCounter = (correctAnswerCounter) => {
   if (correctAnswerCounter === 0) {
     // first49()
-    let answer = first[Math.floor(Math.random()*first.length)];
+    let answer = first49[Math.floor(Math.random()*first49.length)];
     alert(answer);
   } else if (correctAnswerCounter === 1) {
     let answer = second[Math.floor(Math.random()*second.length)];
@@ -233,6 +233,7 @@ const answerCounter = (correctAnswerCounter) => {
     let answer = sixth[Math.floor(Math.random()*sixth.length)];
     alert(answer);
   } else if (correctAnswerCounter === 6) {
+    first49()
     let answer = seventh[Math.floor(Math.random()*seventh.length)];
     alert(answer)
   }
