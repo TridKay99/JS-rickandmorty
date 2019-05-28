@@ -38,8 +38,11 @@ header {
 #container {
   display:flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 20px;
 }
 
 #text {
@@ -52,8 +55,19 @@ header {
 .card {
   width: 200px;
   height: 200px;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  /* font-weight: bold; */
 }
 
-/* img {
-  margin-left: 300px;
-} */
+.insideCard {
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: bold;
+  background: white;
+  /* opacity: 1; */
+  width: 100%;
+}
