@@ -9,14 +9,11 @@ function first49() {
     nums.push(counter)
     counter += 1
   }
-  fetch(`https://rickandmortyapi.com/api/character/${nums}`)
+  const myPromise = fetch(`https://rickandmortyapi.com/api/character/${nums}`)
   .then(function(response) {
     return response.json();
   })
-  .then(function(myJson) {
-    data = myJson;
-    console.log(data);
-  });
+  return myPromise
 }
 
 function second49() {
@@ -28,14 +25,11 @@ function second49() {
     nums2.push(counter)
     counter += 1
   }
-  fetch(`https://rickandmortyapi.com/api/character/${nums2}`)
+  const myPromise = fetch(`https://rickandmortyapi.com/api/character/${nums2}`)
   .then(function(response) {
     return response.json();
   })
-  .then(function(myJson) {
-    data = myJson;
-    console.log(data);
-  });
+  return myPromise
 }
 
 function third49() {
@@ -47,17 +41,14 @@ function third49() {
     nums3.push(counter)
     counter += 1
   }
-  fetch(`https://rickandmortyapi.com/api/character/${nums3}`)
+  const myPromise = fetch(`https://rickandmortyapi.com/api/character/${nums3}`)
   .then(function(response) {
     return response.json();
   })
-  .then(function(myJson) {
-    data = myJson;
-    console.log(data);
-  });
+  return myPromise
 }
 
-function four49() {
+function forth49() {
   let counter = 150
   const nums4 = []
   let data = '';
@@ -66,17 +57,14 @@ function four49() {
     nums4.push(counter)
     counter += 1
   }
-  fetch(`https://rickandmortyapi.com/api/character/${nums4}`)
+  const myPromise = fetch(`https://rickandmortyapi.com/api/character/${nums4}`)
   .then(function(response) {
     return response.json();
   })
-  .then(function(myJson) {
-    data = myJson;
-    console.log(data);
-  });
+  return myPromise
 }
 
-function five49() {
+function fifth49() {
   let counter = 200
   const nums5 = []
   let data = '';
@@ -85,14 +73,11 @@ function five49() {
     nums5.push(counter)
     counter += 1
   }
-  fetch(`https://rickandmortyapi.com/api/character/${nums5}`)
+  const myPromise = fetch(`https://rickandmortyapi.com/api/character/${nums5}`)
   .then(function(response) {
     return response.json();
   })
-  .then(function(myJson) {
-    data = myJson;
-    console.log(data);
-  });
+  return myPromise
 }
 
 function six49() {
@@ -104,17 +89,14 @@ function six49() {
     nums6.push(counter)
     counter += 1
   }
-  fetch(`https://rickandmortyapi.com/api/character/${nums6}`)
+  const myPromise = fetch(`https://rickandmortyapi.com/api/character/${nums6}`)
   .then(function(response) {
     return response.json();
   })
-  .then(function(myJson) {
-    data = myJson;
-    console.log(data);
-  });
+  return myPromise
 }
 
-function seven49() {
+function seventh49() {
   let counter = 300
   const nums7 = []
   let data = '';
@@ -123,17 +105,14 @@ function seven49() {
     nums7.push(counter)
     counter += 1
   }
-  fetch(`https://rickandmortyapi.com/api/character/${nums7}`)
+  const myPromise = fetch(`https://rickandmortyapi.com/api/character/${nums7}`)
   .then(function(response) {
     return response.json();
   })
-  .then(function(myJson) {
-    data = myJson;
-    console.log(data);
-  });
+  return myPromise
 }
 
-function eight49() {
+function eighth49() {
   let counter = 350
   const nums8 = []
   let data = '';
@@ -142,17 +121,14 @@ function eight49() {
     nums8.push(counter)
     counter += 1
   }
-  fetch(`https://rickandmortyapi.com/api/character/${nums8}`)
+  const myPromise = fetch(`https://rickandmortyapi.com/api/character/${nums8}`)
   .then(function(response) {
     return response.json();
   })
-  .then(function(myJson) {
-    data = myJson;
-    console.log(data);
-  });
+  return myPromise
 }
 
-function nine49() {
+function ninth49() {
   let counter = 400
   const nums9 = []
   let data = '';
@@ -161,17 +137,14 @@ function nine49() {
     nums9.push(counter)
     counter += 1
   }
-  fetch(`https://rickandmortyapi.com/api/character/${nums9}`)
+  const myPromise = fetch(`https://rickandmortyapi.com/api/character/${nums9}`)
   .then(function(response) {
     return response.json();
   })
-  .then(function(myJson) {
-    data = myJson;
-    console.log(data);
-  });
+  return myPromise
 }
 
-function ten49() {
+function tenth49() {
   let counter = 450
   const nums10 = []
   let data = '';
@@ -180,62 +153,85 @@ function ten49() {
     nums10.push(counter)
     counter += 1
   }
-  fetch(`https://rickandmortyapi.com/api/character/${nums10}`)
+  const myPromise = fetch(`https://rickandmortyapi.com/api/character/${nums10}`)
   .then(function(response) {
     return response.json();
   })
-  .then(function(myJson) {
-    data = myJson;
-    console.log(data);
-  });
+  return myPromise
 }
 
-
-
-// first49()
-// second49()
-// third49()
-// four49()
-// five49()
-// six49()
-// seven49()
-// eight49()
-// nine49()
-// ten49()
-
-const first = ['Morty','Baby Legs','Black Rick']
-const second = ['Rick','Chrombobulus Michael','Bird Person']
-const third = ['Abradolph Linker','Adjudicator Rick', 'Antenna Morty']
-const forth = ['Ants in my eyes Johnson','Armagheadon','Antenna Rick']
-const fifth = ['Ghost in a jar']
-const sixth = ['Ghost Train']
-const seventh = ['One Million Ants']
-
+let answer;
 
 const answerCounter = (correctAnswerCounter) => {
   if (correctAnswerCounter === 0) {
-    // first49()
-    let answer = first49[Math.floor(Math.random()*first49.length)];
-    alert(answer);
+    const promiseValueOne = first49()
+    promiseValueOne.then((data) => {
+      answer = data[Math.floor(Math.random()*data.length)].name;
+      alert(`Your Rick and Morty character is ${answer}`);
+    })
+
   } else if (correctAnswerCounter === 1) {
-    let answer = second[Math.floor(Math.random()*second.length)];
-    alert(answer);
+    const promiseValueTwo = second49()
+    promiseValueTwo.then((data) => {
+      let answer = data[Math.floor(Math.random()*data.length)].name;
+      alert(`Your Rick and Morty character is ${answer}`);
+    })
+
   } else if (correctAnswerCounter === 2) {
-    let answer = third[Math.floor(Math.random()*third.length)];
-    alert(answer);
+    const promiseValueThree = third49()
+    promiseValueThree.then((data) => {
+      let answer = data[Math.floor(Math.random()*data.length)].name;
+      alert(`Your Rick and Morty character is ${answer}`);
+    })
+
   } else if (correctAnswerCounter === 3) {
-    let answer = forth[Math.floor(Math.random()*forth.length)];
-    alert(answer);
+    const promiseValueFour = forth49()
+    promiseValueFour.then((data) => {
+      let answer = data[Math.floor(Math.random()*data.length)].name;
+      alert(`Your Rick and Morty character is ${answer}`);
+    })
+
   } else if (correctAnswerCounter === 4) {
-    let answer = fifth[Math.floor(Math.random()*fifth.length)];
-    alert(answer);
+    const promiseValueFive = fifth49()
+    promiseValueFive.then((data) => {
+      let answer = data[Math.floor(Math.random()*data.length).name];
+      alert(`Your Rick and Morty character is ${answer}`);
+    })
+
   } else if (correctAnswerCounter === 5) {
-    let answer = sixth[Math.floor(Math.random()*sixth.length)];
-    alert(answer);
+    const promiseValueSix = sixth49()
+    promiseValueSix.then((data) => {
+      let answer = data[Math.floor(Math.random()*data.length)].name;
+      alert(`Your Rick and Morty character is ${answer}`);
+    })
+
   } else if (correctAnswerCounter === 6) {
-    first49()
-    let answer = seventh[Math.floor(Math.random()*seventh.length)];
-    alert(answer)
+    const promiseValueSeven = seventh49()
+    promiseValueSeven.then((data) => {
+      let answer = data[Math.floor(Math.random()*data.length)].name;
+      alert(`Your Rick and Morty character is ${answer}`);
+    })
+
+  } else if (correctAnswerCounter === 7) {
+    const promiseValueEigth = eighth49()
+    promiseValueEigth.then((data) => {
+      let answer = data[Math.floor(Math.random()*data.length)].name;
+      alert(`Your Rick and Morty character is ${answer}`);
+    })
+
+  } else if (correctAnswerCounter === 8) {
+    const promiseValueNinth = ninth49()
+    promiseValueNinth.then((data) => {
+      let answer = data[Math.floor(Math.random()*data.length)].name;
+      alert(`Your Rick and Morty character is ${answer}`);
+    })
+
+  } else {
+    const promiseValuetenth = tenth49()
+    promiseValuetenth.then((data) => {
+      let answer = data[Math.floor(Math.random()*data.length)].name;
+      alert(`Your Rick and Morty character is ${answer}`);
+    })
   }
 }
 
@@ -245,7 +241,11 @@ const quiz = [
   [3, "Rick creates a theme park in a homeless. What is it called?\n (a)Homeless Homes\n (b)Oganopolis\n (c)Anatomy Park","c"],
   [4, "Morty has a baby with an alien robot. What non-human species makes up the other half?\n (a)Gazorpazorp\n (b)Cronenberg\n (c)Alien Parasite","a"],
   [5, "What a shmeckle?\n (a)Ricks cat person friends\n (b)A bin on Gear Head's planet\n (c)A currency","c"],
-  [6, "Which one of these is an Alien Parasite?\n (a)Ghost in a jar\n (b)Counsin Nicky\n (c)Sleepy Gary\n (d)All of them","d"]
+  [6, "Which one of these is an Alien Parasite?\n (a)Ghost in a jar\n (b)Counsin Nicky\n (c)Sleepy Gary\n (d)All of them","d"],
+  [7, "What is Scary Terry's catch phrase?\n (a) Bitch\n (b) Run and Hide, kid\n (c) Im gonna get ya!","a"],
+  [8, "What is the name of the Homeless man Rick builds the them park in?\n (a) Steven\n (b) Ruben\n (c) Unity","b"],
+  [9, "What is the name of the hitman morty kills?\n (a) Chrombobulus Michael\n (b) Korblockian\n (c) Shleem","a"],
+  [10, "What species can have sex with both Men and Women?\n (a) Cronenbergs\n (b) Eye Hole People\n (c) Trunk People","c"]
 ];
 
 
