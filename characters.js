@@ -4,7 +4,7 @@ function getData() {
   const nums = []
   let data = '';
   
-while (counter < 25) {
+while (counter < 494) {
   nums.push(counter)
   counter += 1
 }
