@@ -8,7 +8,7 @@
 }
 
 html { 
-  background: url(R&Mbackground2.jpg) no-repeat center center fixed; 
+  background: url(R&Mbackground.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -17,8 +17,48 @@ html {
 
 header {
   display:flex;
+  flex-direction: column;
   justify-content: flex-end;
+
   font-family: 'rickandmorty';
   font-size: 40px;
-  margin-right: 10px;
+  margin-left: 1050px;
+}
+
+body {
+  width: 100%;
+  height: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color: #3bc130;
+  font-family: 'rickandmorty';
+  font-size: 40px;
+  margin-top: 30px;
+} 
+
+.container {
+  background: rgba(255, 255, 255, 0.801);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin-top: 80px;
+  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  margin-top: 150px;
+}
+
+img {
+  padding: 40px;
 }

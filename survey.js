@@ -206,7 +206,7 @@ const answerCounter = (correctAnswerCounter) => {
     let container = document.querySelector(".container");
 
     let name = document.createElement("p");
-    name.innerText = answer.name;
+    name.innerText = `Name: ${answer.name}`;
 
     let species = document.createElement("p");
     species.innerText = answer.species;
@@ -479,16 +479,16 @@ const answerCounter = (correctAnswerCounter) => {
 }
 
 const quiz = [
-  [1, "Who does Beth shoot?\n (a) Mr.Poopybutthole\n (b) Unmuscular Michael\n (c) Abradolph Linkler", "a"],
-  [2, "Whose the best?\n (a) Squanchy\n (b) Sleepy Gary\n (c) Gazorpazord Field","b"],
-  [3, "Rick creates a theme park in a homeless. What is it called?\n (a)Homeless Homes\n (b)Oganopolis\n (c)Anatomy Park","c"],
-  [4, "Morty has a baby with an alien robot. What non-human species makes up the other half?\n (a)Gazorpazorp\n (b)Cronenberg\n (c)Alien Parasite","a"],
-  [5, "What a shmeckle?\n (a)Ricks cat person friends\n (b)A bin on Gear Head's planet\n (c)A currency","c"],
-  [6, "Which one of these is an Alien Parasite?\n (a)Ghost in a jar\n (b)Counsin Nicky\n (c)Sleepy Gary\n (d)All of them","d"],
-  [7, "What is Scary Terry's catch phrase?\n (a) Bitch\n (b) Run and Hide, kid\n (c) Im gonna get ya!","a"],
-  [8, "What is the name of the Homeless man Rick builds the them park in?\n (a) Steven\n (b) Ruben\n (c) Unity","b"],
-  [9, "What is the name of the hitman morty kills?\n (a) Chrombobulus Michael\n (b) Korblockian\n (c) Shleem","a"],
-  [10, "What species can have sex with both Men and Women?\n (a) Cronenbergs\n (b) Eye Hole People\n (c) Trunk People","c"]
+  [1, "Who would you shoot first?\n (a) Mr.Poopybutthole\n (b) Unmuscular Michael\n (c) Abradolph Linkler\n (d) Million ants", "a"],
+  [2, "Who would you be friends with?\n (a) Squanchy\n (b) Sleepy Gary\n (c) Gazorpazord Field\n (d) King Flippy Nips\n (e) Shmlona Shmlobinson","e"],
+  [3, "Which Vindicator would you rather be?\n (a) Alan Rails\n (b) Noob-Noob\n (c) Supernova","b"],
+  [4, "What race would you prefer to be?\n (a) Gazorpazorp\n (b) Cronenberg\n (c) Alien Parasite\n (d) Gear People","a"],
+  [5, "What song would you sing to Armagheadon?\n (a) Get Schwifty\n (b) Wrecking Ball\n (c) Australian National Anthem","b"],
+  [6, "Which one of these Alien Parasite's would you be friends with?\n (a) Ghost in a jar\n (b) Counsin Nicky\n (c) Amish Robot\n (d) Pencilvester","d"],
+  [7, "Who do you respect?\n (a) Rick\n (b) Principal Vagina\n (c) Bird Person\n (d) Photography Raptor","a"],
+  [8, "Would you give your sexual organ to Shrimply Pibbles?\n (a) Yes\n (b) No","b"],
+  [9, "Who would you hire as a Hitman?\n (a) Chrombobulus Michael\n (b) Rick\n (c) The Devil\n (d) Pencilvester","a"],
+  [10, "What interdimensional TV show would you watch?\n (a) Ball Fondlers\n (b) Jan Michael Vincent\n (c) Alien invasion tomato monster mexican armanda brothers\n we are just regular brothers running in a van from an asteroid\n and all sorts of things the movie\n (d) Pichael Thompsons Cooking show","c"]
 ];
 
 
@@ -503,13 +503,5 @@ for(let i=0; i < quiz.length; i += 1) {
     correctAnswerCounter +=0
   }
 }
-
-// const displayAnswer = (answer) => {
-//     let container = document.querySelector("#container");
-//     let Name = document.createElement("p");
-//     Name.innerText = data.name;
-
-//     container.appendChild(Name)
-// }
 
 answerCounter(correctAnswerCounter)
