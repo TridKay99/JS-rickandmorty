@@ -56,7 +56,6 @@ header {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  /* font-weight: bold; */
 }
 
 .insideCard {
@@ -65,7 +64,6 @@ header {
   align-items: center;
   font-weight: bold;
   background: white;
-  /* opacity: 1; */
   width: 100%;
   text-align: center;
 }
