@@ -479,12 +479,12 @@ const answerCounter = (correctAnswerCounter) => {
 }
 
 const quiz = [
-  [1, "Who would you shoot first?\n (a) Mr.Poopybutthole\n (b) Unmuscular Michael\n (c) Abradolph Linkler\n (d) Million ants", "a"],
+  [1, "ANSWER QUESTION BY TYPING THE LETTER AND CLICK ENTER. i.e a\n Who would you shoot first?\n (a) Mr.Poopybutthole\n (b) Unmuscular Michael\n (c) Abradolph Linkler\n (d) Million ants", "a"],
   [2, "Who would you be friends with?\n (a) Squanchy\n (b) Sleepy Gary\n (c) Gazorpazord Field\n (d) King Flippy Nips\n (e) Shmlona Shmlobinson","e"],
   [3, "Which Vindicator would you rather be?\n (a) Alan Rails\n (b) Noob-Noob\n (c) Supernova","b"],
   [4, "What race would you prefer to be?\n (a) Gazorpazorp\n (b) Cronenberg\n (c) Alien Parasite\n (d) Gear People","a"],
   [5, "What song would you sing to Armagheadon?\n (a) Get Schwifty\n (b) Wrecking Ball\n (c) Australian National Anthem","b"],
-  [6, "Which one of these Alien Parasite's would you be friends with?\n (a) Ghost in a jar\n (b) Counsin Nicky\n (c) Amish Robot\n (d) Pencilvester","d"],
+  [6, "Which one of these Alien Parasite's would you be friends with?\n (a) Ghost in a jar\n (b) Cousin Nicky\n (c) Amish Robot\n (d) Pencilvester","d"],
   [7, "Who do you respect?\n (a) Rick\n (b) Principal Vagina\n (c) Bird Person\n (d) Photography Raptor","a"],
   [8, "Would you give your sexual organ to Shrimply Pibbles?\n (a) Yes\n (b) No","b"],
   [9, "Who would you hire as a Hitman?\n (a) Chrombobulus Michael\n (b) Rick\n (c) The Devil\n (d) Pencilvester","a"],
