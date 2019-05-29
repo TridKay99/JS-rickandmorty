@@ -42,11 +42,14 @@ fetch(`https://rickandmortyapi.com/api/character/${nums}`)
     newDiv.style.background = `url(${result.image})`
     newDiv.style.backgroundSize = "cover"
     newDiv.style.backgroundPosition = "center";
+    newDiv.style.marginBottom = "20px"
     // creating a class for 'newDiv' for css
     newDiv.classList.add("card")
 
+
     // creating a class for 'insideDiv' for css
     insideDiv.classList.add("insideCard")
+    insideDiv.style.opacity = "0.6"
     // Attaching the picture divs to the container.
     container.appendChild(newDiv);
 

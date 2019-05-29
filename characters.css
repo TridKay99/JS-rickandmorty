@@ -39,8 +39,7 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  padding: 20px;
-  padding-bottom: 20px;
+  padding: 20px
 }
 
 #text {
@@ -68,4 +67,5 @@ header {
   background: white;
   /* opacity: 1; */
   width: 100%;
+  text-align: center;
 }
