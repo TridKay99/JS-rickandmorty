@@ -166,71 +166,314 @@ const answerCounter = (correctAnswerCounter) => {
   if (correctAnswerCounter === 0) {
     const promiseValueOne = first49()
     promiseValueOne.then((data) => {
-      answer = data[Math.floor(Math.random()*data.length)].name;
-      alert(`Your Rick and Morty character is ${answer}`);
+    let answer = data[Math.floor(Math.random()*data.length)];
+    alert(`Your Rick and Morty character is id:${answer.id} ${answer.name}`);
+
+      // choose container - where to place information
+    let container = document.querySelector(".container");
+
+    let name = document.createElement("p");
+    name.innerText = answer.name;
+
+    let species = document.createElement("p");
+    species.innerText = answer.species;
+
+    let type = document.createElement("p");
+    type.innerText = answer.type;
+    
+    let status = document.createElement("p")
+    status.innerText = answer.status;
+
+    const image = `
+      <img src="${answer.image}">
+    `
+    
+    // Appending information to the html
+    // container.appendchil(id)
+    container.appendChild(name)
+    container.appendChild(species)
+    container.appendChild(type)
+    container.appendChild(status)
+    document.body.children[1].insertAdjacentHTML("beforeend", image)
     })
 
   } else if (correctAnswerCounter === 1) {
     const promiseValueTwo = second49()
     promiseValueTwo.then((data) => {
-      let answer = data[Math.floor(Math.random()*data.length)].name;
-      alert(`Your Rick and Morty character is ${answer}`);
+    let answer = data[Math.floor(Math.random()*data.length)];
+    alert(`Your Rick and Morty character is id:${answer.id} ${answer.name}`);
+
+    let container = document.querySelector(".container");
+
+    let name = document.createElement("p");
+    name.innerText = answer.name;
+
+    let species = document.createElement("p");
+    species.innerText = answer.species;
+
+    let type = document.createElement("p");
+    type.innerText = answer.type;
+    
+    let status = document.createElement("p")
+    status.innerText = answer.status;
+
+    const image = `
+      <img src="${answer.image}">
+    `
+  
+    container.appendChild(name)
+    container.appendChild(species)
+    container.appendChild(type)
+    container.appendChild(status)
+    document.body.children[1].insertAdjacentHTML("beforeend", image)
     })
 
   } else if (correctAnswerCounter === 2) {
     const promiseValueThree = third49()
     promiseValueThree.then((data) => {
-      let answer = data[Math.floor(Math.random()*data.length)].name;
-      alert(`Your Rick and Morty character is ${answer}`);
+    let answer = data[Math.floor(Math.random()*data.length)];
+    alert(`Your Rick and Morty character is id:${answer.id} ${answer.name}`);
+
+    let container = document.querySelector(".container");
+
+    let name = document.createElement("p");
+    name.innerText = answer.name;
+
+    let species = document.createElement("p");
+    species.innerText = answer.species;
+
+    let type = document.createElement("p");
+    type.innerText = answer.type;
+    
+    let status = document.createElement("p")
+    status.innerText = answer.status;
+
+    const image = `
+      <img src="${answer.image}">
+    `
+  
+    container.appendChild(name)
+    container.appendChild(species)
+    container.appendChild(type)
+    container.appendChild(status)
+    document.body.children[1].insertAdjacentHTML("beforeend", image)
     })
 
   } else if (correctAnswerCounter === 3) {
     const promiseValueFour = forth49()
     promiseValueFour.then((data) => {
-      let answer = data[Math.floor(Math.random()*data.length)].name;
-      alert(`Your Rick and Morty character is ${answer}`);
+    let answer = data[Math.floor(Math.random()*data.length)];
+    alert(`Your Rick and Morty character is id:${answer.id} ${answer.name}`);
+
+    let container = document.querySelector(".container");
+
+    let name = document.createElement("p");
+    name.innerText = answer.name;
+
+    let species = document.createElement("p");
+    species.innerText = answer.species;
+
+    let type = document.createElement("p");
+    type.innerText = answer.type;
+    
+    let status = document.createElement("p")
+    status.innerText = answer.status;
+
+    const image = `
+      <img src="${answer.image}">
+    `
+  
+    container.appendChild(name)
+    container.appendChild(species)
+    container.appendChild(type)
+    container.appendChild(status)
+    document.body.children[1].insertAdjacentHTML("beforeend", image)
     })
 
   } else if (correctAnswerCounter === 4) {
     const promiseValueFive = fifth49()
     promiseValueFive.then((data) => {
-      let answer = data[Math.floor(Math.random()*data.length).name];
-      alert(`Your Rick and Morty character is ${answer}`);
+    let answer = data[Math.floor(Math.random()*data.length)];
+    alert(`Your Rick and Morty character is id:${answer.id} ${answer.name}`);
+
+    let container = document.querySelector(".container");
+
+    let name = document.createElement("p");
+    name.innerText = answer.name;
+
+    let species = document.createElement("p");
+    species.innerText = answer.species;
+
+    let type = document.createElement("p");
+    type.innerText = answer.type;
+    
+    let status = document.createElement("p")
+    status.innerText = answer.status;
+
+    const image = `
+      <img src="${answer.image}">
+    `
+  
+    container.appendChild(name)
+    container.appendChild(species)
+    container.appendChild(type)
+    container.appendChild(status)
+    document.body.children[1].insertAdjacentHTML("beforeend", image)
     })
 
   } else if (correctAnswerCounter === 5) {
     const promiseValueSix = sixth49()
     promiseValueSix.then((data) => {
-      let answer = data[Math.floor(Math.random()*data.length)].name;
-      alert(`Your Rick and Morty character is ${answer}`);
+    let answer = data[Math.floor(Math.random()*data.length)];
+    alert(`Your Rick and Morty character is id:${answer.id} ${answer.name}`);
+
+    let container = document.querySelector(".container");
+
+    let name = document.createElement("p");
+    name.innerText = answer.name;
+
+    let species = document.createElement("p");
+    species.innerText = answer.species;
+
+    let type = document.createElement("p");
+    type.innerText = answer.type;
+    
+    let status = document.createElement("p")
+    status.innerText = answer.status;
+
+    const image = `
+      <img src="${answer.image}">
+    `
+  
+    container.appendChild(name)
+    container.appendChild(species)
+    container.appendChild(type)
+    container.appendChild(status)
+    document.body.children[1].insertAdjacentHTML("beforeend", image)
     })
 
   } else if (correctAnswerCounter === 6) {
     const promiseValueSeven = seventh49()
     promiseValueSeven.then((data) => {
-      let answer = data[Math.floor(Math.random()*data.length)].name;
-      alert(`Your Rick and Morty character is ${answer}`);
+    let answer = data[Math.floor(Math.random()*data.length)];
+    alert(`Your Rick and Morty character is id:${answer.id} ${answer.name}`);
+
+    let container = document.querySelector(".container");
+
+    let name = document.createElement("p");
+    name.innerText = answer.name;
+
+    let species = document.createElement("p");
+    species.innerText = answer.species;
+
+    let type = document.createElement("p");
+    type.innerText = answer.type;
+    
+    let status = document.createElement("p")
+    status.innerText = answer.status;
+
+    const image = `
+      <img src="${answer.image}">
+    `
+  
+    container.appendChild(name)
+    container.appendChild(species)
+    container.appendChild(type)
+    container.appendChild(status)
+    document.body.children[1].insertAdjacentHTML("beforeend", image)
     })
 
   } else if (correctAnswerCounter === 7) {
     const promiseValueEigth = eighth49()
     promiseValueEigth.then((data) => {
-      let answer = data[Math.floor(Math.random()*data.length)].name;
-      alert(`Your Rick and Morty character is ${answer}`);
+    let answer = data[Math.floor(Math.random()*data.length)];
+    alert(`Your Rick and Morty character is id:${answer.id} ${answer.name}`);
+
+    let container = document.querySelector(".container");
+
+    let name = document.createElement("p");
+    name.innerText = answer.name;
+
+    let species = document.createElement("p");
+    species.innerText = answer.species;
+
+    let type = document.createElement("p");
+    type.innerText = answer.type;
+    
+    let status = document.createElement("p")
+    status.innerText = answer.status;
+
+    const image = `
+      <img src="${answer.image}">
+    `
+  
+    container.appendChild(name)
+    container.appendChild(species)
+    container.appendChild(type)
+    container.appendChild(status)
+    document.body.children[1].insertAdjacentHTML("beforeend", image)
     })
 
   } else if (correctAnswerCounter === 8) {
     const promiseValueNinth = ninth49()
     promiseValueNinth.then((data) => {
-      let answer = data[Math.floor(Math.random()*data.length)].name;
-      alert(`Your Rick and Morty character is ${answer}`);
+    let answer = data[Math.floor(Math.random()*data.length)];
+    alert(`Your Rick and Morty character is id:${answer.id} ${answer.name}`);
+
+    let container = document.querySelector(".container");
+
+    let name = document.createElement("p");
+    name.innerText = answer.name;
+
+    let species = document.createElement("p");
+    species.innerText = answer.species;
+
+    let type = document.createElement("p");
+    type.innerText = answer.type;
+    
+    let status = document.createElement("p")
+    status.innerText = answer.status;
+
+    const image = `
+      <img src="${answer.image}">
+    `
+  
+    container.appendChild(name)
+    container.appendChild(species)
+    container.appendChild(type)
+    container.appendChild(status)
+    document.body.children[1].insertAdjacentHTML("beforeend", image)
     })
 
   } else {
     const promiseValuetenth = tenth49()
     promiseValuetenth.then((data) => {
-      let answer = data[Math.floor(Math.random()*data.length)].name;
-      alert(`Your Rick and Morty character is ${answer}`);
+    let answer = data[Math.floor(Math.random()*data.length)];
+    alert(`Your Rick and Morty character is id:${answer.id} ${answer.name}`);
+
+    let container = document.querySelector(".container");
+
+    let name = document.createElement("p");
+    name.innerText = answer.name;
+
+    let species = document.createElement("p");
+    species.innerText = answer.species;
+
+    let type = document.createElement("p");
+    type.innerText = answer.type;
+    
+    let status = document.createElement("p")
+    status.innerText = answer.status;
+
+    const image = `
+      <img src="${answer.image}">
+    `
+  
+    container.appendChild(name)
+    container.appendChild(species)
+    container.appendChild(type)
+    container.appendChild(status)
+    document.body.children[1].insertAdjacentHTML("beforeend", image)
     })
   }
 }
@@ -260,5 +503,13 @@ for(let i=0; i < quiz.length; i += 1) {
     correctAnswerCounter +=0
   }
 }
+
+// const displayAnswer = (answer) => {
+//     let container = document.querySelector("#container");
+//     let Name = document.createElement("p");
+//     Name.innerText = data.name;
+
+//     container.appendChild(Name)
+// }
 
 answerCounter(correctAnswerCounter)
