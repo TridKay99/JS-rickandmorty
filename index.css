@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  /* cursor: url('raygun.png'), auto;	 */
 }
 
 @font-face {
@@ -13,6 +14,7 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  cursor: url(raygun.png), auto;
 }
 
 header {
@@ -22,6 +24,13 @@ header {
   font-size: 40px;
   margin-right: 10px;
 }
+
+.titleAndQuoteAndImage {
+  display:flex;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+
 .titleAndQuote {
   background: rgb(134, 134, 134, 0.5);
   width: 60%;
@@ -29,7 +38,8 @@ header {
   flex-direction:column;
   justify-content: center;
   align-items: center;
-  margin-left: 300px;
+  margin-left: 100px;
+  margin-right: 240px;
   -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   box-shadow: 1px 2px 3px rgba(0,0,0,.5);
@@ -132,6 +142,12 @@ a.button3 {
   box-shadow: 1px 2px 3px rgba(0,0,0,.5);
 }
 
-a {
+img.poopy { 
+  margin-top: 20px;
+  transform-origin:50% 50%;
+  animation:2s rotateRight infinite linear; 
+}
 
+@keyframes rotateRight{
+  100%{ transform:rotate(360deg); }
 }
