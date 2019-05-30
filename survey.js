@@ -80,7 +80,7 @@ function fifth49() {
   return myPromise
 }
 
-function six49() {
+function sixth49() {
   let counter = 250
   const nums6 = []
   let data = '';

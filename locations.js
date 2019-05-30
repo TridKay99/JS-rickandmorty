@@ -1,3 +1,4 @@
+
 // 76 Locations
 const getLocationData = () => {
   let counter = 1
@@ -9,37 +10,47 @@ const getLocationData = () => {
     counter += 1
   }
 
-  fetch(`https://rickandmortyapi.com/api/location/${nums}`)
-  .then(function(response) {
-
-    return response.json(); 
+  axios.get(`https://rickandmortyapi.com/api/location/${nums}`)
+  .then((response) => {
+    return response.data
   })
-  .then(function(myJson) {
-    data = myJson;
-    let container = document.querySelector("#container");
+  .then((myJson) => {
+    data = myJson
+
+  // fetch(`https://rickandmortyapi.com/api/location/${nums}`)
+  // .then(function(response) {
+
+  //   return response.json(); 
+  // })
+  // .then(function(myJson) {
+  //   data = myJson;
+  //   let container = document.querySelector("#container");
 
     data.forEach(function(result) {
     let newDiv = document.createElement("Div")
     newDiv.classList.add("locationDiv")
 
-    let Id = document.createElement("p");
-    Id.innerText = result.id
+    let num = document.createElement("p")
+    num.innerText = result.id
 
-    let Name = document.createElement("p")
-    Name.innerText = result.name
+    let name = document.createElement("p")
+    name.innerText = result.name
 
-    let Type = document.createElement("p")
-    Type.innerText = result.type
+    let type =document.createElement("p")
+    type.innerText = result.type
 
     let Dimension = document.createElement("p")
     Dimension.innerText = result.dimension
     container.appendChild(newDiv)
-    newDiv.appendChild(Id);
-    newDiv.appendChild(Name);
-    newDiv.appendChild(Type);
+    newDiv.appendChild(num);
+    newDiv.appendChild(name);
     newDiv.appendChild(Dimension);
+    newDiv.appendChild(type)
     })
   })
 }
 
 getLocationData()
+
+
+// dimension, id, name
